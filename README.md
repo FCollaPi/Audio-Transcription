@@ -1,4 +1,4 @@
-# audio-transcription
+# Audio-Transcription
 
 A small, dependency-light CLI tool that transcribes audio files (mp3, wav,
 m4a, flac, …) into **plain text**, **SRT** subtitles or **WebVTT** captions
