@@ -5,6 +5,13 @@ transcribe.py — Simple CLI tool to transcribe audio using open-source Whisper 
 Uses faster-whisper (CTranslate2-based reimplementation of OpenAI Whisper) for
 fast, low-memory transcription that runs well on CPU or GPU.
 
+Attribution / sources:
+- OpenAI Whisper (MIT, (c) 2022 OpenAI): format_timestamp() and the TXT/SRT/VTT
+  writers below are adapted from whisper/utils.py (https://github.com/openai/whisper).
+- SYSTRAN/faster-whisper (MIT, (c) 2023 SYSTRAN): transcription engine and CLI
+  conventions (https://github.com/SYSTRAN/faster-whisper).
+- Full third-party notices: see THIRD_PARTY_NOTICES.md.
+
 Setup:
     pip install faster-whisper
 
@@ -28,7 +35,11 @@ from pathlib import Path
 def format_timestamp(
     seconds: float, always_include_hours: bool = True, decimal_marker: str = ","
 ) -> str:
-    """Format seconds as SRT/VTT timestamp: HH:MM:SS,mmm or HH:MM:SS.mmm"""
+    """Format seconds as SRT/VTT timestamp: HH:MM:SS,mmm or HH:MM:SS.mmm
+
+    Adapted from OpenAI Whisper's format_timestamp() (whisper/utils.py).
+    MIT License, Copyright (c) 2022 OpenAI. See THIRD_PARTY_NOTICES.md.
+    """
     milliseconds = round(seconds * 1000.0)
 
     hours = milliseconds // 3_600_000
@@ -157,7 +168,7 @@ def main():
     except ImportError:
         print(
             "Error: faster-whisper is not installed.\n"
-            "Install it with: pip install faster-whisper",
+            "Install it with: pip install -r requirements.txt",
             file=sys.stderr,
         )
         sys.exit(1)

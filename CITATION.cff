@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software in a thesis or publication, please cite it using the
+  metadata below (and the Zenodo DOI minted for the release, if one exists).
+title: "audio-transcription"
+abstract: >-
+  Simple command-line tool to transcribe audio files (mp3, wav, m4a, flac, ...)
+  to plain text, SRT or WebVTT using open-source Whisper models via
+  faster-whisper (CTranslate2).
+authors:
+  - family-names: "Colla Pinheiro"
+    given-names: "Felipe"
+    orcid: "https://orcid.org/0009-0007-0263-2203"
+    affiliation: "Independent Researcher"
+keywords:
+  - speech-to-text
+  - automatic speech recognition
+  - whisper
+  - faster-whisper
+  - transcription
+  - offline transcription
+  - srt
+  - vtt
+license: MIT
+version: "1.0.0"
+date-released: "2026-08-30"
