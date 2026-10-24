@@ -99,6 +99,8 @@ the incorporated code) are in **[`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.m
 
 ### This repository
 
+[![DOI](https://zenodo.org/badge/1431879836.svg)](https://doi.org/10.5281/zenodo.23611203)
+
 BibTeX:
 
 ```bibtex
@@ -109,6 +111,7 @@ BibTeX:
     publisher    = {Zenodo},
     version      = {1.0.0},
     url          = {https://github.com/FCollaPi/audio-transcription},
+    doi          = {10.5281/zenodo.23611204},
     note         = {Built on faster-whisper and OpenAI Whisper, both MIT licensed}
 }
 ```
