@@ -1,6 +1,6 @@
 {
   "title": "Audio-Transcription",
-  "description": "Simple command-line tool to transcribe audio files (mp3, wav, m4a, flac, ...) to plain text, SRT or WebVTT using open-source Whisper models via faster-whisper (CTranslate2).",
+  "description": "Simple offline command-line tool to transcribe audio files (mp3, wav, m4a, flac, ...) to plain text, SRT or WebVTT using open-source Whisper models via faster-whisper (CTranslate2).",
   "version": "1.0.0",
   "upload_type": "software",
   "license": "mit",
