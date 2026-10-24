@@ -4,7 +4,7 @@ message: >-
   metadata below (and the Zenodo DOI minted for the release, if one exists).
 title: "audio-transcription"
 abstract: >-
-  Simple offline ommand-line tool to transcribe audio files (mp3, wav, m4a, flac, ...)
+  Simple offline command-line tool to transcribe audio files (mp3, wav, m4a, flac, ...)
   to plain text, SRT or WebVTT using open-source Whisper models via
   faster-whisper (CTranslate2).
 authors:
